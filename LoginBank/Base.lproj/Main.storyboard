@@ -38,6 +38,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="changedTextFiel:" destination="BYZ-38-t0r" eventType="editingChanged" id="rk9-YE-X3I"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTo-jD-9Sc">
                                         <rect key="frame" x="25" y="349" width="96" height="22"/>
@@ -52,6 +55,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="changedTextFiel:" destination="BYZ-38-t0r" eventType="editingChanged" id="mi4-jh-l8D"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPd-1K-mXQ">
                                         <rect key="frame" x="71.666666666666686" y="541" width="250" height="60"/>
@@ -98,6 +104,11 @@
                             <constraint firstItem="wQJ-gK-zV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zph-C1-WSf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="rPd-1K-mXQ" id="WAj-d3-42B"/>
+                        <outlet property="passFiel" destination="jmp-bx-EKl" id="UAM-1N-SL1"/>
+                        <outlet property="userFiel" destination="q6D-lt-Apu" id="O9O-ks-ilb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,10 +263,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
